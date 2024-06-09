@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "dd40b556b7f2e945e1f7f920d64be6f6"
+name = "happy-customers"
+handle = "happy-customers-2"
+application_url = "https://super-duper-enigma-gw79j4j59jq2wp59-4040.app.github.dev"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "homenryshop.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://super-duper-enigma-gw79j4j59jq2wp59-4040.app.github.dev/auth/callback",
+  "https://super-duper-enigma-gw79j4j59jq2wp59-4040.app.github.dev/auth/shopify/callback",
+  "https://super-duper-enigma-gw79j4j59jq2wp59-4040.app.github.dev/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
